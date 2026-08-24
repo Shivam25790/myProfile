@@ -11,6 +11,7 @@ body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI"
 .avatar{width:96px;height:96px;border-radius:50%;background:linear-gradient(135deg,#ff7a18,#af002d);display:inline-flex;align-items:center;justify-content:center;color:#fff;font-weight:700;font-size:32px;margin:0 auto 18px}
 .name{margin:8px 0 4px;font-size:28px;color:#0b1220}
 .role{margin:0 0 16px;font-size:16px;color:var(--muted);font-weight:600}
+.location{color:var(--muted);margin-bottom:12px}
 .intro{color:#334155;line-height:1.6;max-width:780px;margin:0 auto 20px}
 .links{display:flex;gap:12px;justify-content:center}
 .btn{background:#111827;color:#fff;padding:10px 16px;border-radius:8px;text-decoration:none;font-weight:600}

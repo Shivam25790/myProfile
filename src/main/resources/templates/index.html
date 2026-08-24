@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="utf-8" />
+    <title>Shivam Dhar Dwivedi — Home</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" th:href="@{/profile/style.css}">
+  </head>
+  <body>
+    <main class="hero">
+      <div class="card">
+        <div class="avatar">SD</div>
+        <h1 class="name">Shivam Dhar Dwivedi</h1>
+        <h2 class="role">Senior Java Backend Engineer &nbsp;&nbsp;||&nbsp;&nbsp; Spring Boot &nbsp;&nbsp;||&nbsp;&nbsp; Microservices &nbsp;&nbsp;||&nbsp;&nbsp; REST API &nbsp;&nbsp;||&nbsp;&nbsp; AWS</h2>
+        <p class="location">Bengaluru, Karnataka, India</p>
+        <p class="intro">Experienced backend engineer focused on building scalable, maintainable services using Java and Spring Boot. Skilled in designing REST APIs, microservices architectures, and cloud-native deployments on AWS.</p>
+
+        <div class="links">
+          <a class="btn" th:href="@{/profiles}">Project</a>
+          <a class="btn btn-outline" th:href="@{/profile}">Static Profile</a>
+        </div>
+
+        <hr style="margin:22px 0"/>
+
+        <section>
+          <h3>Contact Me</h3>
+          <form th:action="@{/contact}" method="post" th:object="${contact}">
+            <div style="display:flex;gap:8px;flex-wrap:wrap;justify-content:center">
+              <input type="text" th:field="*{name}" placeholder="Your name" style="padding:10px;border-radius:8px;border:1px solid #ddd;flex:1;min-width:160px" />
+              <input type="email" th:field="*{email}" placeholder="Your email" style="padding:10px;border-radius:8px;border:1px solid #ddd;flex:1;min-width:200px" />
+            </div>
+            <div style="margin-top:12px">
+              <textarea th:field="*{message}" placeholder="Your message" rows="5" style="width:100%;padding:10px;border-radius:8px;border:1px solid #ddd"></textarea>
+            </div>
+            <div style="margin-top:12px;text-align:center">
+              <button class="btn" type="submit">Send Message</button>
+            </div>
+          </form>
+        </section>
+
+      </div>
+    </main>
+  </body>
+</html>
