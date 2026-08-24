@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>myProfile — Spring Boot app</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>body{font-family:Arial,Helvetica,sans-serif;margin:40px;color:#222}a{color:#0366d6}</style>
+  </head>
+  <body>
+    <h1>myProfile</h1>
+    <p>This repository contains a Spring Boot MVC application (server-side Java + H2 DB). GitHub Pages only serves static sites and cannot run the Java backend.</p>
+    <h2>How to run locally</h2>
+    <ol>
+      <li>Install Gradle or generate the Gradle wrapper (run <code>gradle wrapper</code> locally).</li>
+      <li>Start the app: <code>./gradlew bootRun</code> (or <code>gradle bootRun</code>).</li>
+      <li>Open the app at <a href="http://localhost:8080/profiles">http://localhost:8080/profiles</a>. H2 console: <a href="http://localhost:8080/h2-console">/h2-console</a> (JDBC URL: <code>jdbc:h2:mem:myprofiledb</code>).</li>
+    </ol>
+    <h2>Deploying</h2>
+    <p>To publish the running app publicly, deploy the Spring Boot application to a server/PAAS (Render, Railway, Heroku, AWS Elastic Beanstalk, Google Cloud Run, etc.). Alternatively, build a separate static frontend and host it with GitHub Pages while keeping the backend hosted elsewhere.</p>
+    <p>See <a href="./README.md">README</a> for more details.</p>
+  </body>
+</html>
