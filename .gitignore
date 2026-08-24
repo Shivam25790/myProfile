@@ -1,0 +1,19 @@
+/.gradle
+/build/
+/.idea/
+/.vscode/
+out/
+*.class
+*.log
+*.jar
+*.war
+*.ear
+.gradle/
+.gradle/**
+# Gradle wrapper
+gradle-wrapper.jar
+gradle/wrapper/gradle-wrapper.jar
+
+# OS
+.DS_Store
+Thumbs.db

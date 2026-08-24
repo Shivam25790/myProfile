@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8" />
+    <title th:text="${profile.id} != null ? 'Edit Profile' : 'Create Profile'">Profile</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+</head>
+<body>
+<h1 th:text="${profile.id} != null ? 'Edit Profile' : 'Create Profile'"></h1>
+<form th:action="@{${profile.id} != null ? '/profiles/' + ${profile.id} : '/profiles'}" method="post" th:object="${profile}">
+    <label>Name: <input type="text" th:field="*{name}"/></label><br/>
+    <label>Email: <input type="email" th:field="*{email}"/></label><br/>
+    <label>Bio:<br/><textarea th:field="*{bio}"></textarea></label><br/>
+    <label>Skills: <input type="text" th:field="*{skills}"/></label><br/>
+    <label>LinkedIn: <input type="url" th:field="*{linkedin}"/></label><br/>
+    <label>GitHub: <input type="url" th:field="*{github}"/></label><br/>
+    <button type="submit">Save</button>
+</form>
+<a th:href="@{/profiles}">Back</a>
+</body>
+</html>
